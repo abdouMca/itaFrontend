@@ -1,0 +1,34 @@
+<ion-view ng-controller="MapSituationController">
+
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons>
+            <button class="button icon ion-home" ui-sref="home.map"></button>
+        </ion-nav-buttons>
+        <ion-nav-title>Map</ion-nav-title>
+
+    </ion-nav-bar>
+
+    <ion-content class="has-header">
+
+
+        <ui-gmap-google-map
+                center='map.center'
+                zoom='map.zoom'
+                draggable='false'
+                bounds='bounds'>
+
+            <ui-gmap-marker ng-repeat="position in pos"
+                            idKey='position.id'
+                            coords='position.marker'
+                            icon='position.icon'
+                            >
+                <ui-gmap-window options="windowOptions" closeClick="closeClick()">
+                    <div>{{position.title}}</div>
+                </ui-gmap-window>
+            </ui-gmap-marker>
+
+        </ui-gmap-google-map>
+
+
+    </ion-content>
+</ion-view>

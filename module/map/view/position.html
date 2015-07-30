@@ -1,0 +1,85 @@
+<ion-view ng-controller="MapLocateController">
+
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons>
+            <button class="button icon ion-home" ui-sref="home.map"></button>
+        </ion-nav-buttons>
+        <ion-nav-title>Map</ion-nav-title>
+
+    </ion-nav-bar>
+
+    <ion-content class="has-header">
+
+        <div class="card" style="height:60%">
+
+            <div class="item" style="height:100%">
+                <ui-gmap-google-map
+                        center='map.center'
+                        zoom='map.zoom'
+                        draggable='false'>
+
+                    <ui-gmap-marker
+                            coords='marker'
+                            idKey='1'>
+                    </ui-gmap-marker>
+
+                </ui-gmap-google-map>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <div class="item item-divider item-calm">Situation</div>
+
+            <label class="item item-radio assertive">
+                <input type="radio" name="status">
+
+                <div class="item-content">Mblokia</div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+            <label class="item item-radio energized">
+                <input type="radio" name="status">
+
+                <div class="item-content">Choya</div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+            <label class="item item-radio balanced">
+                <input type="radio" name="status">
+
+                <div class="item-content">Mserha</div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+        </div>
+        <div class="card">
+            <div class="item item-divider item-calm">Ajouter un commentaire</div>
+            <label class="item item-input">
+                <textarea placeholder="Comments"></textarea>
+            </label>
+            <div class="item item-divider"></div>
+        </div>
+
+        <div class="card">
+            <div class="item">
+                <button class="button button-block button-positive"
+                        ng-click="takePicture()">
+                    Prendre une photo
+                    <i class="icon ion-picture"></i>
+                </button>
+            </div>
+            <div class="item">
+                <img ng-src="{{picture}}">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item">
+                <button class="button button-block button-positive">Envoyer</button>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
