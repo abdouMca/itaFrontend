@@ -4,9 +4,8 @@
 
 
 angular.module('map.controllers', [])
-    .controller('MapLocateController', ['$scope', '$cordovaCamera', '$cordovaGeolocation',
-        function ($scope, $cordovaCamera, $cordovaGeolocation) {
-
+    .controller('MapLocateController', ['$scope', 'positionService', '$cordovaCamera', '$cordovaGeolocation',
+        function ($scope, positionService, $cordovaCamera, $cordovaGeolocation) {
 
             // geolocation
             $scope.map = {
@@ -20,9 +19,9 @@ angular.module('map.controllers', [])
                 scaleControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
+
+            //get current position and bind it to $scope.postion
             $scope.marker = {};
-
-
             var posOptions = {timeout: 10000, enableHighAccuracy: false};
             $cordovaGeolocation
                 .getCurrentPosition(posOptions)
@@ -33,6 +32,16 @@ angular.module('map.controllers', [])
                 }, function (err) {
                     console.log(err);
                 });
+            $scope.position = {};
+            $scope.$watchCollection('marker', function (oldValue, newValue) {
+                $scope.position.lat = newValue.latitude;
+                $scope.position.lng = newValue.longitude;
+            });
+
+            //send current position to server via  position service
+            $scope.newPosition = function(position){
+               positionService.newPosition(position);
+            };
 
             //Pictures
             var options = {
@@ -58,19 +67,19 @@ angular.module('map.controllers', [])
             $scope.bounds = positionService.bounds;
             $scope.pos = positionService.getAll();
 
-            for(var i=0; i < $scope.pos.length; i++){
-                $scope.pos[i].icon = 'img/marker/'+$scope.pos[i].status+'.png';
+            for (var i = 0; i < $scope.pos.length; i++) {
+                $scope.pos[i].icon = 'img/marker/' + $scope.pos[i].status + '.png';
             }
             console.log($scope.pos);
 
             $scope.windowOptions = {
-                visible :false
+                visible: false
             };
-            $scope.onClick = function() {
+            $scope.onClick = function () {
                 $scope.windowOptions.visible = !$scope.windowOptions.visible;
             };
 
-            $scope.closeClick = function() {
+            $scope.closeClick = function () {
                 $scope.windowOptions.visible = false;
             };
 

@@ -3,31 +3,12 @@
  */
 
 
-angular.module('post.services',[])
-    .factory('postService',function(){
-
-
+angular.module('app.services',[])
+    .constant('END_POINT', 'http://ita.lan/api')
+    .factory('endPointService', ['END_POINT', function (END_POINT) {
         return {
-            list : [
-                {
-                    id:1,
-                    title: 'Black box',
-                    description:'some des description'
-                },
-                {
-                    id:2,
-                    title: 'XBOX 360',
-                    description:'super new xbox 360'
-                }
-            ],
-            getlist: function(){
-                return this.list;
-            },
-            getOne: function (id) {
-                return this.list[0];
-            }
+            listPosition:END_POINT+'/position',
+            newPosiotn: END_POINT+'/new-position'
         };
-
-
-    })
+    }])
 ;

@@ -12,7 +12,7 @@
 
         <div class="card" style="height:60%">
 
-            <div class="item" style="height:100%">
+            <div class="item item-image" style="height: 100%;" >
                 <ui-gmap-google-map
                         center='map.center'
                         zoom='map.zoom'
@@ -25,61 +25,75 @@
 
                 </ui-gmap-google-map>
             </div>
-
-
         </div>
 
-        <div class="card">
-            <div class="item item-divider item-calm">Situation</div>
+        <form ng-submit="newPosition(position)">
 
-            <label class="item item-radio assertive">
-                <input type="radio" name="status">
-
-                <div class="item-content">Mblokia</div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-
-            <label class="item item-radio energized">
-                <input type="radio" name="status">
-
-                <div class="item-content">Choya</div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-
-            <label class="item item-radio balanced">
-                <input type="radio" name="status">
-
-                <div class="item-content">Mserha</div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-        </div>
-        <div class="card">
-            <div class="item item-divider item-calm">Ajouter un commentaire</div>
-            <label class="item item-input">
-                <textarea placeholder="Comments"></textarea>
-            </label>
-            <div class="item item-divider"></div>
-        </div>
-
-        <div class="card">
-            <div class="item">
-                <button class="button button-block button-positive"
-                        ng-click="takePicture()">
-                    Prendre une photo
-                    <i class="icon ion-picture"></i>
-                </button>
+            <div class="list">
+                <div class="item item-divider">
+                    <p>Votre position</p>
+                </div>
+                <div class="item">
+                    <h3 class="positive">lat : {{position.lat}}</h3>
+                </div>
+                <div class="item">
+                    <h3 class="positive">lng :{{position.lng}}</h3>
+                </div>
             </div>
-            <div class="item">
-                <img ng-src="{{picture}}">
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="item">
-                <button class="button button-block button-positive">Envoyer</button>
-            </div>
-        </div>
 
+            <div class="card">
+                <div class="item item-divider item-calm">Situation</div>
+                <label class="item item-radio assertive">
+                    <input type="radio" value="2" ng-model="position.status" name="status">
+
+                    <div class="item-content">Mblokia</div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+                <label class="item item-radio energized">
+                    <input type="radio" value="1" ng-model="position.status" name="status">
+
+                    <div class="item-content">Choya</div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+                <label class="item item-radio balanced">
+                    <input type="radio" value="0" ng-model="position.status" name="status">
+
+                    <div class="item-content">Mserha</div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+            </div>
+            <div class="card">
+                <div class="item item-divider item-calm">Ajouter un commentaire</div>
+                <label class="item item-input">
+                    <textarea ng-model="position.comment" placeholder="Comments"></textarea>
+                </label>
+
+                <div class="item item-divider"></div>
+            </div>
+
+            <div class="card">
+                <div class="item">
+                    <button class="button button-block button-positive"
+                            ng-click="takePicture()">
+                        Prendre une photo
+                        <i class="icon ion-picture"></i>
+                    </button>
+                </div>
+                <div class="item">
+                    <img ng-src="{{picture}}">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item">
+                    <button class="button button-block button-positive">Envoyer</button>
+                </div>
+            </div>
+        </form>
 
     </ion-content>
 </ion-view>
