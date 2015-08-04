@@ -4,8 +4,8 @@
 
 
 angular.module('map.controllers', [])
-    .controller('MapLocateController', ['$scope', 'positionService', '$cordovaCamera', '$cordovaGeolocation',
-        function ($scope, positionService, $cordovaCamera, $cordovaGeolocation) {
+    .controller('MapLocateController', ['$scope', 'positionService','photoService', '$cordovaCamera', '$cordovaGeolocation',
+        function ($scope, positionService, photoService, $cordovaCamera, $cordovaGeolocation) {
 
             // geolocation
             $scope.map = {
@@ -22,7 +22,7 @@ angular.module('map.controllers', [])
 
             //get current position and bind it to $scope.postion
             $scope.marker = {};
-            var posOptions = {timeout: 10000, enableHighAccuracy: false};
+            var posOptions = {timeout: 10000, enableHighAccuracy: true};
             $cordovaGeolocation
                 .getCurrentPosition(posOptions)
                 .then(function (position) {
@@ -34,8 +34,8 @@ angular.module('map.controllers', [])
                 });
             $scope.position = {};
             $scope.$watchCollection('marker', function (oldValue, newValue) {
-                $scope.position.lat = newValue.latitude;
-                $scope.position.lng = newValue.longitude;
+                $scope.position.latitude = newValue.latitude;
+                $scope.position.longitude = newValue.longitude;
             });
 
             //send current position to server via  position service
@@ -44,6 +44,7 @@ angular.module('map.controllers', [])
             };
 
             //Pictures
+            /*
             var options = {
                 quality: 50
             };
@@ -56,6 +57,14 @@ angular.module('map.controllers', [])
                     // error
                 });
             };
+            */
+
+            $scope.picture = '';
+            $scope.takePicture = function () {
+                photoService.takePicture().then(function(imageData){
+                    $scope.picture = imageData;
+                });
+            };
 
         }])
 
@@ -64,13 +73,15 @@ angular.module('map.controllers', [])
     .controller('MapSituationController', ['$scope', 'positionService', 'uiGmapIsReady',
         function ($scope, positionService, uiGmapIsReady) {
 
+            $scope.pos = [];
             $scope.bounds = positionService.bounds;
-            $scope.pos = positionService.getAll();
-
-            for (var i = 0; i < $scope.pos.length; i++) {
-                $scope.pos[i].icon = 'img/marker/' + $scope.pos[i].status + '.png';
-            }
-            console.log($scope.pos);
+            positionService.getAll().success(function(data){
+                console.log(data);
+                $scope.pos = data;
+                for (var i = 0; i < $scope.pos.length; i++) {
+                    $scope.pos[i].icon = 'img/marker/' + $scope.pos[i].status + '.png';
+                };
+            });
 
             $scope.windowOptions = {
                 visible: false
@@ -78,7 +89,6 @@ angular.module('map.controllers', [])
             $scope.onClick = function () {
                 $scope.windowOptions.visible = !$scope.windowOptions.visible;
             };
-
             $scope.closeClick = function () {
                 $scope.windowOptions.visible = false;
             };

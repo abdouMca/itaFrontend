@@ -7,54 +7,43 @@ angular.module('map.services', [])
 
     .factory('positionService', ['endPointService', '$http', function (endPointService, $http) {
 
-        console.log(endPointService.listPosition);
-
         var positions = {
-            list: [
-                {
-                    id: 1,
-                    title: 'rop bloqué',
-                    status: '2',
-                    marker: {
-                        latitude: 36.628837,
-                        longitude: 3.4494278
-                    }
-                },
-                {
-                    id: 2,
-                    title: 'kheloui',
-                    status: '0',
-                    marker: {
-                        latitude: 36.726187,
-                        longitude: 3.429521
-                    }
-                },
-                {
-                    id: 3,
-                    title: 'choya habsa',
-                    status: '1',
-                    marker: {
-                        latitude: 36.715273,
-                        longitude: 3.238367
-                    }
-                }
-            ],
+            list: [],
+
             getAll: function () {
-                return this.list;
+                return $http({
+                    method:"get",
+                    url:endPointService.listPosition
+                });
             },
+
             getPosition: function (id) {
                 return this.list[0];
             },
+
             newPosition: function (position) {
                 console.log(position);
+                console.log(endPointService.newPosiotn);
+                console.log('data sent');
+
                 $http({
                     method: "post",
                     url: endPointService.newPosiotn,
-                    data: position
-                }).success(function () {
+                    data: ObjecttoParams(position),
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function (response) {
+                    console.log(response);
                     console.log('data sent');
                 });
             }
+        };
+
+        function ObjecttoParams(obj) {
+            var p = [];
+            for (var key in obj) {
+                p.push(key + '=' + encodeURIComponent(obj[key]));
+            }
+            return p.join('&');
         };
 
         var markers = positions.list;
