@@ -4,7 +4,7 @@
 
 
 angular.module('app.services',[])
-    .constant('END_POINT', 'http://ita.lan/api')
+    .constant('END_POINT', 'http://map-edini.rhcloud.com/api')
     .factory('endPointService', ['END_POINT', function (END_POINT) {
         return {
             listPosition:END_POINT+'/position',

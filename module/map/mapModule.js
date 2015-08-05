@@ -12,6 +12,11 @@ angular.module('map', ['map.controllers', 'map.services'])
                 url: '/position',
                 templateUrl: 'module/map/view/position.html'
             })
+            .state('success',{
+            	url:'/success',
+            	templateUrl:'module/map/view/success.html'
+            })
         ;
+
     }])
 ;

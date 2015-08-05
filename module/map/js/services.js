@@ -5,6 +5,7 @@
 
 angular.module('map.services', [])
 
+    // position service to get different positions and add new ones  
     .factory('positionService', ['endPointService', '$http', function (endPointService, $http) {
 
         var positions = {
@@ -12,8 +13,8 @@ angular.module('map.services', [])
 
             getAll: function () {
                 return $http({
-                    method:"get",
-                    url:endPointService.listPosition
+                    method: "get",
+                    url: endPointService.listPosition
                 });
             },
 
@@ -60,6 +61,30 @@ angular.module('map.services', [])
 
         positions.bounds = bounds;
         return positions;
+
+    }])
+
+    // geoLocation service to get current coordinates of devices
+    .factory('geoLocationService', ['$cordovaGeolocation', function ($cordovaGeolocation) {
+
+        var Options = {
+            timeout: 10000,
+            enableHighAccuracy: true
+        };
+
+        return {
+            getCurrentPostion: function () {
+                return $cordovaGeolocation.getCurrentPosition(Options)
+                    .then(function (position) {
+                        console.log('log position here');
+                        console.log(position.latitude);
+                        return position;
+                    }, function (err) {
+                        console.log(err);
+                        return err;
+                    });
+            }
+        };
 
     }])
 ;

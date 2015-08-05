@@ -10,16 +10,18 @@
 
     <ion-content class="has-header">
 
+        <!-- map -->
         <div class="card" style="height:60%">
 
-            <div class="item item-image" style="height: 100%;" >
+            <div class="item item-image" style="height: 100%;">
                 <ui-gmap-google-map
                         center='map.center'
                         zoom='map.zoom'
-                        draggable='false'>
+                        draggable='true'
+                        refresh='false'>
 
                     <ui-gmap-marker
-                            coords='marker'
+                            coords='position'
                             idKey='1'>
                     </ui-gmap-marker>
 
@@ -27,6 +29,7 @@
             </div>
         </div>
 
+        <!-- form -->
         <form ng-submit="newPosition(position)">
 
             <div class="list">
@@ -41,9 +44,9 @@
                 </div>
             </div>
 
-
             <div class="card">
-                <div class="item item-divider item-calm">Situation</div>
+                <div class="item item-divider item-calm">Situation de la route</div>
+
                 <label class="item item-radio assertive">
                     <input type="radio" value="2" ng-model="position.status" name="status">
 
@@ -59,13 +62,13 @@
                 </label>
 
                 <label class="item item-radio balanced">
-                    <input type="radio" value="0" ng-model="position.status" name="status">
+                    <input type="radio" value="0" ng-model="position.status" name="status" ng-checked="true">
 
                     <div class="item-content">Mserha</div>
                     <i class="radio-icon ion-checkmark"></i>
                 </label>
-
             </div>
+
             <div class="card">
                 <div class="item item-divider item-calm">Ajouter un commentaire</div>
                 <label class="item item-input">
@@ -76,23 +79,27 @@
             </div>
 
             <div class="card">
-                <div class="item">
-                    <button class="button button-block button-positive"
-                            ng-click="takePicture()">
+                <div class="item text-center">
+                    <button class="button button-positive" ng-click="takePicture()">
                         Prendre une photo
-                        <i class="icon ion-picture"></i>
+                        <i class="icon ion-image"></i>
                     </button>
                 </div>
-                <div class="item">
+                <div class="item item-image">
                     <img ng-src="{{picture}}">
                 </div>
             </div>
 
             <div class="card">
-                <div class="item">
-                    <button class="button button-block button-positive">Envoyer</button>
-                </div>
+            <div class="item">
+            <button class=" button button-block button-positive">
+                Envoyer
+                <i class="icon ion-checkmark-circled"></i>
+            </button>
             </div>
+            <div class="item item-divider"></div>
+            </div>
+
         </form>
 
     </ion-content>
