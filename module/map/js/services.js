@@ -31,7 +31,7 @@ angular.module('map.services', [])
                     method: "post",
                     url: endPointService.newPosiotn,
                     data: ObjecttoParams(position),
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                    headers: {'Content-Type': 'multipart/form-data'}
                 }).success(function (response) {
                     console.log(response);
                     console.log('data sent');
@@ -60,6 +60,14 @@ angular.module('map.services', [])
         // console.log(bounds);
 
         positions.bounds = bounds;
+
+        //get status color ( red , green, yellow)
+        positions.colorStatus = [
+            'energized',
+            'balanced',
+            'assertive'
+        ];
+
         return positions;
 
     }])

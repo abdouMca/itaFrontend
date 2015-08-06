@@ -15,16 +15,29 @@
                 refresh='true'
                 center='map.center'
                 zoom='map.zoom'
-                draggable='false'
+                draggable='true'
                 bounds='bounds'>
 
             <ui-gmap-marker ng-repeat="position in pos"
                             idKey='position.id'
                             coords='position'
-                            icon='position.icon'
+                            click='onClick(position)'
                             >
-                <ui-gmap-window options="windowOptions" closeClick="closeClick()">
-                    <div>{{position.title}}</div>
+                <ui-gmap-window
+                        isIconVisibleOnClick='true'
+                        closeClick='onClick(position)'
+                        options='windowOptions'
+                        >
+
+                    <div class="card">
+                        <div ng-class="'item item-'+getStatusColor(position.status)">
+                            {{position.comment}}
+                        </div>
+                        <div class="item">
+                            <img ng-src='{{position.image}}' style="width: 150px" />
+                        </div>
+                    </div>
+
                 </ui-gmap-window>
             </ui-gmap-marker>
 

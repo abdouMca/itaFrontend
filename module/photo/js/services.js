@@ -10,18 +10,19 @@
         var picture = '';
         return {
             takePicture: function () {
-                var options = {
-                    quality: 50,
+                var options = {                    
                     destinationType: Camera.DestinationType.DATA_URL,
-                    sourceType: Camera.PictureSourceType.CAMERA,
-                    allowEdit: true,
-                    //encodingType: Camera.EncodingType.JPEG
+                    sourceType: Camera.PictureSourceType.CAMERA,                    
+                    encodingType: Camera.EncodingType.JPEG
                 };
                 return $cordovaCamera.getPicture(options).then(function (imageData) {                
                     return "data:image/jpeg;base64," + imageData;
                 }, function (err) {
                     return err;
                 });
+            },
+            getPictureUrl : function(){
+                
             }
         };
 }])
