@@ -1,41 +1,61 @@
-<ion-view>
+<ion-view ng-controller="ContactController">
     <ion-content class="has-header">
 
         <div class="card">
             <div class="item item-energized">
-
                 <h2>Votre avis</h2>
-
             </div>
             <div class="item">
                 <p>Veuillez nous donnez votre avis pour amelioré l applciation</p>
+
                 <p>Ou par email a l'adress suivant</p>
+
                 <p><strong>khaled.hadj.a@gmail.com</strong></p>
             </div>
-
         </div>
 
-        <div class="list">
-            <label class="item item-input item-stacked-label">
-                <span class="input-label">Votre Nom</span>
-                <input type="text" placeholder="Khaled">
-            </label>
-            <label class="item item-input item-stacked-label">
-                <span class="input-label">Email</span>
-                <input type="text" placeholder="example@mail.com">
-            </label>
 
-            <div class="item item-divider"></div>
-            <label class="item item-input item-stacked-label">
-                <span class="input-label">Message</span>
-                <textarea type="text" placeholder="message"></textarea>
-            </label>
+        <form name='contactForm' ng-submit='sendMessage(message)' novalidate>
+            <div class="list">
 
-            <div class="item">
-                <button class="button button-positive button-outline">Envoyer</button>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Votre Nom</span>
+                    <input ng-model="message.fromName"
+                           ng-required='true'
+                           ng-minlength="2"
+                           type="text"
+                           placeholder="Khaled" >
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input ng-model="message.fromEmail"
+                           ng-required="true"
+                           ng-
+                           type="email"
+                           placeholder="example@mail.com">
+                </label>
+
+                <div class="item item-divider"></div>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Message</span>
+                    <textarea ng-model="message.content"
+                              ng-required="true"
+                              ng-minlength="5"
+                              ng-maxlength="250"
+                              type="text"
+                              placeholder="message">
+                        Votre message
+                    </textarea>
+                </label>
+
+                <div class="item">
+                    <button ng-disabled='contactForm.$valid' class="button button-positive button-outline">Envoyer</button>
+                </div>
+                <div class="item item-divider"></div>
             </div>
-
-        </div>
+        </form>
 
     </ion-content>
 </ion-view>

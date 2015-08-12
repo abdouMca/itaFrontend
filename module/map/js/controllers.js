@@ -2,7 +2,6 @@
  * Created by khaled on 7/28/15.
  */
 
-
 angular.module('map.controllers', [])
 
     //Home Map page show marker and situation
@@ -20,9 +19,9 @@ angular.module('map.controllers', [])
                         $scope.pos[i].windowOptions = {
                             visible: false
                         };
-                        $scope.pos[i].image =  'https://upload.wikimedia.org/wikipedia/commons/3/3c/Peak_hour_traffic_in_melbourne.jpg';
+                        $scope.pos[i].image = 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Peak_hour_traffic_in_melbourne.jpg';
                     }
-                    console.log(JSON.stringify($scope.pos));
+                   // console.log(JSON.stringify($scope.pos));
                 });
             }, 1000);
 
@@ -40,9 +39,9 @@ angular.module('map.controllers', [])
                 position.windowOptions.visible = false;
             };
 
-            $scope.getStatusColor = function(index){
+            $scope.getStatusColor = function (index) {
                 var color = positionService.colorStatus[index];
-                console.log(color);
+               // console.log(color);
                 return color;
             };
 
@@ -69,42 +68,48 @@ angular.module('map.controllers', [])
 
     .controller('MapSuccessController', ['$state', '$timeout',
         function ($state, $timeout) {
-
             $timeout(function () {
                 $state.go('home.map');
             }, 3000);
-            $timeout(function () {
-                $state.go('home.map');
-            }, 3000)
         }])
 
-    .controller('MapLocateController', ['$scope', 'positionService', 'photoService', 'geoLocationService',
-        function ($scope, positionService, photoService, geoLocationService) {
+    .controller('MapLocateController', ['$scope', '$state', 'positionService', 'photoService', 'geoLocationService', '$cordovaFileTransfer', 
+        function ($scope, $state, positionService, photoService, geoLocationService, $cordovaFileTransfer) {
 
             // geoLocation
             $scope.map = {
-                center: {
-                    latitude: 36.4025514,
-                    longitude: 3.5601134
-                },
+                center: positionService.centerCoordinate,
                 zoom: 8
             };
 
             //get current position and bind it to $scope.postion
             $scope.position = {};
-
-            geoLocationService.getCurrentPostion()
+            var lockCoordinate = false;
+            geoLocationService
+                .getCurrentPostion()
                 .then(function (position) {
+
+
+                    console.log('lock is :' +lockCoordinate);
+                    console.log('position :')
                     console.log(position);
-                    $scope.position.latitude = position.coords.latitude;
-                    $scope.position.longitude = position.coords.longitude;
-                    $scope.map.center = $scope.position;
+
+                    if(!lockCoordinate) {
+                        console.log('lock inside :' +lockCoordinate);
+                        $scope.position.latitude = angular.copy(position.coords.latitude);
+                        $scope.position.longitude = angular.copy(position.coords.longitude);
+                        $scope.map.center = $scope.position;
+                        lockCoordinate = true;
+                    }
+
+                }, function(err){
+                    console.log(err);
                 });
 
             //Pictures
             $scope.picture = '';
             $scope.takePicture = function () {
-                photoService.takePicture().then(function (imageData) {
+                photoService.getPictureUrl().then(function (imageData) {
                     $scope.picture = imageData;
                     console.log(imageData);
                 });
@@ -112,17 +117,10 @@ angular.module('map.controllers', [])
 
             //send current position to server via  position service
             $scope.newPosition = function (position) {
-                console.log(position.latitude);
-                console.log(position.longitude);
-                console.log(position.comment);
-                console.log(position.status);
-
-                position.image = $scope.picture;
-                positionService.newPosition(position);
+                //position.image = $scope.picture;
+                //positionService.newPosition(position);
+                positionService.sendDataWithImage($scope.picture, position)
                 $state.go('success');
             };
-
-
         }])
-
 ;

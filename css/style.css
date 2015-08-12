@@ -35,3 +35,8 @@ map {
     padding-left: 3px;
     padding-right: 3px;
 }
+
+input.ng-dirty.ng-invalid{
+    border-color: red;
+}
+

@@ -12,7 +12,6 @@
 
 
         <ui-gmap-google-map
-                refresh='true'
                 center='map.center'
                 zoom='map.zoom'
                 draggable='true'
@@ -21,6 +20,7 @@
             <ui-gmap-marker ng-repeat="position in pos"
                             idKey='position.id'
                             coords='position'
+                            icon='position.icon'
                             click='onClick(position)'
                             >
                 <ui-gmap-window

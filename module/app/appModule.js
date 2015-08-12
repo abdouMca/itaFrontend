@@ -35,6 +35,7 @@ angular.module('app', ['app.services', 'app.controllers'])
 
             .state('home.feedback', {
                 url: '/feedback',
+                controller:'ContactController',
                 views: {
                     'tab-feedback': {
                         templateUrl: 'module/app/view/feedback.html'

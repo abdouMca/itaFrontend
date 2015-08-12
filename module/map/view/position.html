@@ -11,7 +11,9 @@
     <ion-content class="has-header">
 
         <!-- map -->
+
         <div class="card" style="height:60%">
+            <div class="item item-divider">Carte</div>
 
             <div class="item item-image" style="height: 100%;">
                 <ui-gmap-google-map
@@ -32,7 +34,7 @@
         <!-- form -->
         <form ng-submit="newPosition(position)">
 
-            <div class="list">
+            <div class="card">
                 <div class="item item-divider">
                     <p>Votre position</p>
                 </div>
@@ -76,14 +78,12 @@
                 </label>
 
                 <div class="item item-divider"></div>
-            </div>
 
-            <div class="card">
                 <div class="item text-center">
-                    <button class="button button-positive" ng-click="takePicture()">
+                    <a class="button button-positive" ng-click="takePicture()">
                         Prendre une photo
-                        <i class="icon ion-image"></i>
-                    </button>
+                        <i class="icon ion-android-camera"></i>
+                    </a>
                 </div>
                 <div class="item item-image">
                     <img ng-src="{{picture}}">
@@ -92,9 +92,9 @@
 
             <div class="card">
             <div class="item">
-            <button class=" button button-block button-positive">
+            <button class=" button button-block button-positive button-outline">
                 Envoyer
-                <i class="icon ion-checkmark-circled"></i>
+                <i class="icon ion-android-done"></i>
             </button>
             </div>
             <div class="item item-divider"></div>

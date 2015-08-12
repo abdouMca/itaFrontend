@@ -6,10 +6,16 @@
 angular.module('map.services', [])
 
     // position service to get different positions and add new ones  
-    .factory('positionService', ['endPointService', '$http', function (endPointService, $http) {
+    .factory('positionService', ['endPointService', '$http', '$cordovaFileTransfer', 
+        function (endPointService, $http, $cordovaFileTransfer) {
 
         var positions = {
             list: [],
+
+            centerCoordinate : {
+                latitude: 36.4025514,
+                longitude: 3.5601134
+            },
 
             getAll: function () {
                 return $http({
@@ -30,21 +36,45 @@ angular.module('map.services', [])
                 $http({
                     method: "post",
                     url: endPointService.newPosiotn,
-                    data: ObjecttoParams(position),
+                    data: endPointService.ObjectToParams(position),
                     headers: {'Content-Type': 'multipart/form-data'}
                 }).success(function (response) {
                     console.log(response);
                     console.log('data sent');
                 });
-            }
-        };
+            },
 
-        function ObjecttoParams(obj) {
-            var p = [];
-            for (var key in obj) {
-                p.push(key + '=' + encodeURIComponent(obj[key]));
+            sendDataWithImage : function upload(image, position){
+
+                console.info(JSON.stringify(position));
+
+                var options = {
+                    fileKey: "file",
+                    fileName: "image.jpg",
+                    chunkedMode: false,
+                    mimeType: "image/jpeg",
+                    params:position
+                };
+                return $cordovaFileTransfer.upload(endPointService.newPosiotn, image, options)
+                    .then(function(result) {
+                        // Success!
+                        console.info('success');
+                        console.error(JSON.stringify(options));
+                        console.error(JSON.stringify(result));
+                        return result;
+
+
+                    }, function(err) {
+                        // Error
+                        console.info(JSON.stringify(err));
+                    }, function (progress) {
+                        // constant progress updates
+                        console.info(JSON.stringify(progress));
+                        return progress;
+                    });
+
             }
-            return p.join('&');
+
         };
 
         var markers = positions.list;

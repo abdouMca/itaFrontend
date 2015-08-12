@@ -1,15 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="118075b4-54fa-4f03-94c9-fa4267ef6fe7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/common/commonModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/common/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/common/js/services.js" />
+    <list default="true" id="c4946ba1-6709-4bf8-8518-3d36779b922a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/composerJson.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module/app/view/contact.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/js/.keep" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/js/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/marker/0.png" afterPath="$PROJECT_DIR$/img/marker/0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/marker/1.png" afterPath="$PROJECT_DIR$/img/marker/1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/marker/2.png" afterPath="$PROJECT_DIR$/img/marker/2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/marker/waze/Alert_pin_loads@2x.png" afterPath="$PROJECT_DIR$/img/marker/waze/Alert_pin_loads@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/all.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/all.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/lib/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/ionic.png" afterPath="$PROJECT_DIR$/img/ionic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.eot" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.ttf" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.woff" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/legend.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/legend.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.managers.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.managers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.models.child.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.models.child.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.models.parent.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.models.parent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.options.builders.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.options.builders.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.options.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.options.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.utils.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.directives.api.utils.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.extensions.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.extensions.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.providers.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.providers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.wrapped.png" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/png/modules/uiGmapgoogle-maps.wrapped.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/lib/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/lib/angular-animate/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/.bower.json" afterPath="$PROJECT_DIR$/lib/angular-google-maps/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/.bower.json" afterPath="$PROJECT_DIR$/lib/angular-sanitize/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/lib/angular-ui-router/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/.bower.json" afterPath="$PROJECT_DIR$/lib/ionic/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lodash/.bower.json" afterPath="$PROJECT_DIR$/lib/lodash/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/.bower.json" afterPath="$PROJECT_DIR$/lib/ngCordova/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/.travis.yml" afterPath="$PROJECT_DIR$/lib/angular-google-maps/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/CHANGELOG.md" afterPath="$PROJECT_DIR$/lib/angular-google-maps/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/lib/angular-ui-router/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/CHANGELOG.md" afterPath="$PROJECT_DIR$/lib/ngCordova/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/lib/angular-ui-router/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/Gruntfile.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/Gruntfile.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/lib/angular-ui-router/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lodash/LICENSE" afterPath="$PROJECT_DIR$/lib/lodash/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/LICENSE" afterPath="$PROJECT_DIR$/lib/ngCordova/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/README.md" afterPath="$PROJECT_DIR$/lib/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/README.md" afterPath="$PROJECT_DIR$/lib/angular-animate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/lib/angular-sanitize/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/lib/angular-ui-router/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/README.md" afterPath="$PROJECT_DIR$/lib/ionic/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/README.md" afterPath="$PROJECT_DIR$/lib/ngCordova/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_action-sheet.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_action-sheet.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_animations.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_animations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_backdrop.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_backdrop.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_badge.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_bar.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_button-bar.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_button-bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_button.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_checkbox.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_checkbox.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_form.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_grid.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_items.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_items.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_list.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_loaders.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_loaders.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_loading.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_loading.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_menu.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_mixins.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_modal.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_platform.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_platform.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_popover.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_popover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_popup.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_popup.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_progress.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_progress.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_radio.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_radio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_range.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_range.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_refresher.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_refresher.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_scaffolding.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_scaffolding.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_select.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_select.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_slide-box.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_slide-box.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_spinner.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_spinner.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_split-pane.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_split-pane.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_tabs.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_toggle.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_toggle.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_transitions.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_transitions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_type.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_util.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_util.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/_variables.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/all.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/all.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/lib/angular-animate/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/lib/angular-animate/angular-animate.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/lib/angular-animate/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/lib/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view.min.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js.map" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js.map" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps-street-view_dev_mapped.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps.min.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js.map" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js.map" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/lib/angular-sanitize/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="$PROJECT_DIR$/lib/angular-ui-router/api/angular-ui-router.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/release/angular-ui-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular.js" afterPath="$PROJECT_DIR$/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/lib/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/appModule.js" afterPath="$PROJECT_DIR$/module/app/appModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/bootstrap.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/bootstrap.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/bower.json" afterPath="$PROJECT_DIR$/lib/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/bower.json" afterPath="$PROJECT_DIR$/lib/angular-animate/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/bower.json" afterPath="$PROJECT_DIR$/lib/angular-google-maps/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/lib/angular-sanitize/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/lib/angular-ui-router/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/bower.json" afterPath="$PROJECT_DIR$/lib/ionic/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lodash/bower.json" afterPath="$PROJECT_DIR$/lib/lodash/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/bower.json" afterPath="$PROJECT_DIR$/lib/ngCordova/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/circle.yml" afterPath="$PROJECT_DIR$/lib/angular-google-maps/circle.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/common/commonModule.js" afterPath="$PROJECT_DIR$/module/common/commonModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/js/controllers.js" afterPath="$PROJECT_DIR$/module/app/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/common/js/controllers.js" afterPath="$PROJECT_DIR$/module/common/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/js/controllers.js" afterPath="$PROJECT_DIR$/module/map/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/photo/js/controllers.js" afterPath="$PROJECT_DIR$/module/photo/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/js/controllers.js" afterPath="$PROJECT_DIR$/module/post/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/detail.html" afterPath="$PROJECT_DIR$/module/post/view/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/view/feedback.html" afterPath="$PROJECT_DIR$/module/app/view/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/feedback.html" afterPath="$PROJECT_DIR$/module/post/view/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/google-api-mock.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/google-api-mock.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/google-map-spec-controller.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/google-map-spec-controller.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/helper.mockEvents.spec.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/helper.mockEvents.spec.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/helper.polyline.spec.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/helper.polyline.spec.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/view/home.html" afterPath="$PROJECT_DIR$/module/app/view/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/home.html" afterPath="$PROJECT_DIR$/module/post/view/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/initiator.coffee" afterPath="$PROJECT_DIR$/lib/angular-google-maps/spec/coffee/helpers/initiator.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.min.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.min.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/css/ionic.css" afterPath="$PROJECT_DIR$/lib/ionic/css/ionic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/css/ionic.min.css" afterPath="$PROJECT_DIR$/lib/ionic/css/ionic.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/js/ionic.min.js" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/scss/ionic.scss" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionic.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.svg" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/legend.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/legend.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/list.html" afterPath="$PROJECT_DIR$/module/post/view/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lodash/lodash.js" afterPath="$PROJECT_DIR$/lib/lodash/lodash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lodash/lodash.min.js" afterPath="$PROJECT_DIR$/lib/lodash/lodash.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/view/map.html" afterPath="$PROJECT_DIR$/module/app/view/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/view/map.html" afterPath="$PROJECT_DIR$/module/map/view/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/mapModule.js" afterPath="$PROJECT_DIR$/module/map/mapModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/new.html" afterPath="$PROJECT_DIR$/module/post/view/new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova-mocks.js" afterPath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova-mocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova-mocks.min.js" afterPath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova-mocks.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova.js" afterPath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova.min.js" afterPath="$PROJECT_DIR$/lib/ngCordova/dist/ng-cordova.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/package.json" afterPath="$PROJECT_DIR$/lib/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-animate/package.json" afterPath="$PROJECT_DIR$/lib/angular-animate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/lib/angular-sanitize/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ngCordova/package.json" afterPath="$PROJECT_DIR$/lib/ngCordova/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/photo/photoModule.js" afterPath="$PROJECT_DIR$/module/photo/photoModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/view/position.html" afterPath="$PROJECT_DIR$/module/app/view/position.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/view/position.html" afterPath="$PROJECT_DIR$/module/map/view/position.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/view/post.html" afterPath="$PROJECT_DIR$/module/post/view/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/postModule.js" afterPath="$PROJECT_DIR$/module/post/postModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/resolve.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/app/js/services.js" afterPath="$PROJECT_DIR$/module/app/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/common/js/services.js" afterPath="$PROJECT_DIR$/module/common/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/js/services.js" afterPath="$PROJECT_DIR$/module/map/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/photo/js/services.js" afterPath="$PROJECT_DIR$/module/photo/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/post/js/services.js" afterPath="$PROJECT_DIR$/module/post/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/stateDirectives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/stateFilters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/map/view/success.html" afterPath="$PROJECT_DIR$/module/map/view/success.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/templateFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.managers.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.managers.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.models.child.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.models.child.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.models.parent.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.models.parent.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.options.builders.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.options.builders.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.options.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.options.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.utils.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.directives.api.utils.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.extensions.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.extensions.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.providers.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.providers.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.wrapped.dot" afterPath="$PROJECT_DIR$/lib/angular-google-maps/dist/architecture/dot/modules/uiGmapgoogle-maps.wrapped.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/urlRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/viewDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/lib/angular-ui-router/src/viewScroll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -32,11 +224,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/common/js/services.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8460411">
-              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.06422018">
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -44,52 +236,21 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="Html5" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/post/view/post.html" />
-        <option value="$PROJECT_DIR$/module/post/view/feedback.html" />
-        <option value="$PROJECT_DIR$/module/app/postModule.js" />
-        <option value="$PROJECT_DIR$/module/post/js/services.js" />
-        <option value="$PROJECT_DIR$/module/post/postModule.js" />
-        <option value="$PROJECT_DIR$/module/post/view/new.html" />
-        <option value="$PROJECT_DIR$/module/post/js/controllers.js" />
-        <option value="$PROJECT_DIR$/module/post/view/list.html" />
-        <option value="$PROJECT_DIR$/module/post/view/detail.html" />
-        <option value="$PROJECT_DIR$/module/post/view/home.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/module/app/view/post.html" />
-        <option value="$PROJECT_DIR$/module/map/view/home.html" />
-        <option value="$PROJECT_DIR$/module/app/view/map.html" />
-        <option value="$PROJECT_DIR$/module/app/view/position.html" />
-        <option value="$PROJECT_DIR$/module/app/view/home.html" />
-        <option value="$PROJECT_DIR$/module/map/mapModule.js" />
-        <option value="$PROJECT_DIR$/module/app/view/contact.html" />
-        <option value="$PROJECT_DIR$/module/app/view/feedback.html" />
-        <option value="$PROJECT_DIR$/module/app/js/controllers.js" />
         <option value="$PROJECT_DIR$/module/app/appModule.js" />
-        <option value="$PROJECT_DIR$/module/app/js/services.js" />
-        <option value="$PROJECT_DIR$/module/photo/photoModule.js" />
-        <option value="$PROJECT_DIR$/module/photo/js/controllers.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/module/app/js/controllers.js" />
+        <option value="$PROJECT_DIR$/module/app/view/feedback.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/module/photo/js/services.js" />
-        <option value="$PROJECT_DIR$/module/map/view/position.html" />
-        <option value="$PROJECT_DIR$/module/map/view/map.html" />
-        <option value="$PROJECT_DIR$/module/map/js/services.js" />
         <option value="$PROJECT_DIR$/module/map/js/controllers.js" />
-        <option value="$PROJECT_DIR$/module/common/js/services.js" />
+        <option value="$PROJECT_DIR$/module/app/js/services.js" />
+        <option value="$PROJECT_DIR$/module/map/js/services.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -105,12 +266,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="24" />
-    <option name="width" value="1602" />
-    <option name="height" value="830" />
+    <option name="x" value="458" />
+    <option name="y" value="25" />
+    <option name="width" value="1142" />
+    <option name="height" value="835" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -133,6 +294,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,7 +342,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="photo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -197,7 +360,109 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="photo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -219,32 +484,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FullScreen" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/khaled/Desktop/IONIC/ita/www/index.html&#10;service&#9;FILE&#9;file:///home/khaled/Desktop/IONIC/ita/www/module/post/js/services.js&#10;deta&#9;FILE&#9;file:///home/khaled/Desktop/IONIC/ita/www/module/post/view/detail.html" />
-    <property name="last_opened_file_path" value="/var/www/html/itaBackend" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/module" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/www/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -271,14 +534,6 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -286,25 +541,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="118075b4-54fa-4f03-94c9-fa4267ef6fe7" name="Default" comment="" />
-      <created>1438088221934</created>
+      <changelist id="c4946ba1-6709-4bf8-8518-3d36779b922a" name="Default" comment="" />
+      <created>1439196966254</created>
       <option name="number" value="Default" />
-      <updated>1438088221934</updated>
+      <updated>1439196966254</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1602" height="830" extended-state="6" />
-    <editor active="true" />
+    <frame x="458" y="25" width="1142" height="835" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.219375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26754385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32897195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="526" y="551" width="887" height="176" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -316,26 +571,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32897195" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="57" y="724" width="887" height="176" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15290323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -350,370 +585,235 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/module/map/js/services.js</url>
+          <line>105</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/mapModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/appModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/view/position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="14" />
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding>
+            <element signature="e#169#2393#0" expanded="false" />
+            <element signature="e#2436#2603#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/map/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/view/position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/mapModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/appModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23829788">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="45" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38723403">
-          <caret line="15" column="127" selection-start-line="15" selection-start-column="127" selection-end-line="15" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/postModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="44" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40444446">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/post/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.8">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062222224">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18666667">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/marker/0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031111112">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/marker/1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2727273">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/view/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15601783">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/photo/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#3345#3958#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/photo/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5754277">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06389301">
-          <caret line="5" column="88" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/view/position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18584071">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6743827">
-          <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/app/appModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1769911">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/photo/photoModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21681416">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/map/mapModule.js">
+    <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding>
+            <element signature="e#169#2393#0" expanded="false" />
+            <element signature="e#2436#2603#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/map/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36950147">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
           <folding>
-            <element signature="e#1234#1416#0" expanded="false" />
-            <element signature="e#1559#1711#0" expanded="false" />
+            <element signature="e#3345#3958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/photo/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/appModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/view/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/map/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3345#3958#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5381232">
-          <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#170#2389#0" expanded="false" />
-            <element signature="e#2432#2695#0" expanded="false" />
+            <element signature="e#169#2393#0" expanded="false" />
+            <element signature="e#2436#2603#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/common/js/services.js">
+    <entry file="file://$PROJECT_DIR$/module/photo/photoModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8460411">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/photo/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/appModule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/view/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6344411">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8179191">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7586705">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/app/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18063584">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/photo/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/map/view/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28899083">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/map/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24561404">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="e#3345#3958#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/map/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29385966">
+          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding>
+            <element signature="e#169#2393#0" expanded="false" />
+            <element signature="e#2436#2603#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06422018">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding />
         </state>
       </provider>
