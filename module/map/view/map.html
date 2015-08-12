@@ -18,9 +18,9 @@
                 bounds='bounds'>
 
             <ui-gmap-marker ng-repeat="position in pos"
+                            icon='position.icon'
                             idKey='position.id'
                             coords='position'
-                            icon='position.icon'
                             click='onClick(position)'
                             >
                 <ui-gmap-window
@@ -33,7 +33,7 @@
                         <div ng-class="'item item-'+getStatusColor(position.status)">
                             {{position.comment}}
                         </div>
-                        <div class="item">
+                        <div class="item item-image">
                             <img ng-src='{{position.image}}' style="width: 150px" />
                         </div>
                     </div>

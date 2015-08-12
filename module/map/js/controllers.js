@@ -14,16 +14,14 @@ angular.module('map.controllers', [])
                 positionService.getAll().success(function (data) {
                     $scope.pos = data;
                     for (var i = 0; i < $scope.pos.length; i++) {
-                        //$scope.pos[i].icon = 'img/marker/' + $scope.pos[i].status + '.png';
                         $scope.pos[i].animation = google.maps.Animation.DROP;
                         $scope.pos[i].windowOptions = {
                             visible: false
                         };
-                        $scope.pos[i].image = 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Peak_hour_traffic_in_melbourne.jpg';
                     }
-                   // console.log(JSON.stringify($scope.pos));
+
                 });
-            }, 1000);
+            }, 500);
 
 
             $scope.windowOptions = {
@@ -51,7 +49,7 @@ angular.module('map.controllers', [])
                     latitude: 36.711929,
                     longitude: 3.115517
                 },
-                zoom: 12,
+                zoom: 14,
                 disableDefaultUI: false,
                 draggable: false,
                 scaleControl: false,

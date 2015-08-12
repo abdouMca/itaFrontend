@@ -5,8 +5,8 @@
 
 angular.module('app.controllers', [])
 
-    .controller('ContactController', ['$scope', '$state', 'contactService', '$timeout', '$cordovaProgress',
-        function ($scope, $state, contactService, $timeout, $cordovaProgress) {
+    .controller('ContactController', ['$scope', '$state', 'contactService', '$timeout',
+        function ($scope, $state, contactService, $timeout) {
 
             $scope.sendMessage = function (msg) {
                 console.log(msg);
@@ -22,7 +22,6 @@ angular.module('app.controllers', [])
             };
 
             $timeout(function(){
-                $cordovaProgress.showBar(true, 50000);
                 console.log('progress launched');
             }, 1000);
 
