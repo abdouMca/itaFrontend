@@ -2,32 +2,49 @@
  * Created by khaled on 7/28/15.
  */
 
+'use strict';
+
 angular.module('map.controllers', [])
 
     //Home Map page show marker and situation
-    .controller('MapSituationController', ['$scope', '$timeout', 'positionService', 'uiGmapIsReady',
-        function ($scope, $timeout, positionService, uiGmapIsReady) {
+    .controller('MapSituationController', ['$scope', '$timeout', 'positionService', 'uiGmapIsReady', 'geoLocationService',
+        function ($scope, $timeout, positionService, uiGmapIsReady, geoLocationService) {
+
+
+            /* AUTOCOMPLETE */
+            $scope.autocompleteoptions = {
+                country: 'dz',
+                types: '(cities)'
+            };
+            $scope.autocompletedetail = '';
+            $scope.autocompleteresult = '';
+            $scope.getRoute = function () {
+                console.log($scope.autocompletedetail);
+                //positionService.getDirection($scope.mapObject, $scope.myPosition, $scope.autoCompleteResult);
+            };
+
+
             $scope.pos = [];
             $scope.bounds = positionService.bounds;
-
-            $timeout(function () {
-                positionService.getAll().success(function (data) {
+            positionService.getAll()
+                .success(function (data) {
                     $scope.pos = data;
                     for (var i = 0; i < $scope.pos.length; i++) {
-                        $scope.pos[i].animation = google.maps.Animation.DROP;
+                        $scope.pos[i].icon = {url: 'img/marker/' + $scope.pos[i].status + '.png'};
                         $scope.pos[i].windowOptions = {
                             visible: false
                         };
                     }
-
                 });
-            }, 500);
 
+            $scope.markerOption = {
+                animation: google.maps.Animation.DROP,
+                draggable: false
+            };
 
             $scope.windowOptions = {
                 visible: false
             };
-
             $scope.onClick = function (position) {
                 console.log(position);
                 position.windowOptions.visible = !$scope.windowOptions.visible;
@@ -36,32 +53,47 @@ angular.module('map.controllers', [])
             $scope.closeClick = function (position) {
                 position.windowOptions.visible = false;
             };
-
             $scope.getStatusColor = function (index) {
                 var color = positionService.colorStatus[index];
-               // console.log(color);
                 return color;
             };
 
-            // geolocation
+            /* Map */
+            $scope.myPosition = {};
+            geoLocationService
+                .getCurrentPostion()
+                .then(function (position) {
+                    console.log(JSON.stringify(position));
+                    $scope.myPosition.latitude = position.coords.latitude;
+                    $scope.myPosition.longitude = position.coords.longitude;
+                }, function (err) {
+                    console.log(err);
+                });
+
             $scope.map = {
                 center: {
                     latitude: 36.711929,
                     longitude: 3.115517
                 },
-                zoom: 14,
-                disableDefaultUI: false,
-                draggable: false,
+                zoom: 14
+            };
+            $scope.mapOptions = {
+                disableDefaultUI: true,
+                streetViewControl: false,
                 scaleControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
+
+
+            //fit mp bounds and get route
+            $scope.mapObject = {};
             uiGmapIsReady.promise(1).then(function (instances) {
                 instances.forEach(function (inst) {
                     var map = inst.map;
                     map.fitBounds($scope.bounds);
+                    //$scope.mapObject = inst.map;
                 });
             });
-
         }])
 
     .controller('MapSuccessController', ['$state', '$timeout',
@@ -71,8 +103,8 @@ angular.module('map.controllers', [])
             }, 3000);
         }])
 
-    .controller('MapLocateController', ['$scope', '$state', 'positionService', 'photoService', 'geoLocationService', '$cordovaFileTransfer', 
-        function ($scope, $state, positionService, photoService, geoLocationService, $cordovaFileTransfer) {
+    .controller('MapLocateController', ['$scope', '$state', 'positionService', 'photoService', 'geoLocationService',
+        function ($scope, $state, positionService, photoService, geoLocationService) {
 
             // geoLocation
             $scope.map = {
@@ -86,23 +118,15 @@ angular.module('map.controllers', [])
             geoLocationService
                 .getCurrentPostion()
                 .then(function (position) {
-
-
-                    console.log('lock is :' +lockCoordinate);
-                    console.log('position :')
-                    console.log(position);
-
-                    if(!lockCoordinate) {
-                        console.log('lock inside :' +lockCoordinate);
-                        $scope.position.latitude = angular.copy(position.coords.latitude);
-                        $scope.position.longitude = angular.copy(position.coords.longitude);
-                        $scope.map.center = $scope.position;
-                        lockCoordinate = true;
-                    }
-
-                }, function(err){
+                    $scope.position.latitude = angular.copy(position.coords.latitude);
+                    $scope.position.longitude = angular.copy(position.coords.longitude);
+                }, function (err) {
                     console.log(err);
                 });
+
+            //$scope.$watchCollection('position', function(){
+             //   $scope.map.center = $scope.position;
+            //});
 
             //Pictures
             $scope.picture = '';

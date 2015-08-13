@@ -3,15 +3,15 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('main', ['ionic', 'uiGmapgoogle-maps', 'ngCordova' , 'app', 'map', 'photo'])
+angular.module('main', ['ionic', 'uiGmapgoogle-maps', 'ngAutocomplete', 'ngCordova' , 'app', 'map', 'photo'])
 
     .config(['$urlRouterProvider', 'uiGmapGoogleMapApiProvider',function($urlRouterProvider, uiGmapGoogleMapApiProvider){
         $urlRouterProvider.otherwise('/');
-
         uiGmapGoogleMapApiProvider.configure({
             key: 'AIzaSyCavNvapehlPoN1VeNI4ti2ZPGHF0aqkrU'
-            //v: '3.17',
-            //libraries: 'weather,geometry,visualization'
+           // v: '3.17',
+           // libraries: 'places',
+           // language:'fr'// 'weather,geometry,visualization'
         });
     }])
 

@@ -1,0 +1,71 @@
+<ion-view ng-controller="MapSituationController">
+
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons>
+            <button class="button icon ion-home" ui-sref="home.map"></button>
+        </ion-nav-buttons>
+        <ion-nav-title>Map</ion-nav-title>
+
+    </ion-nav-bar>
+
+    <ion-content class="has-header">
+
+        <ui-gmap-google-map
+                center='map.center'
+                zoom='map.zoom'
+                draggable='true'
+                bounds='bounds'
+                options='mapOptions'>
+
+            <!--to add as a map control -->
+            <ui-gmap-search-box
+                    options="searchbox.options"
+                    template="searchbox.template"
+                    events="searchbox.events"
+                    >
+            </ui-gmap-search-box>
+
+            <!-- terrafic marker -->
+            <ui-gmap-marker ng-repeat="position in pos"
+                            icon='position.icon'
+                            idKey='position.id'
+                            coords='position'
+                            click='onClick(position)'
+                            options="markerOption"
+                    >
+                <ui-gmap-window
+                        isIconVisibleOnClick='true'
+                        closeClick='onClick(position)'
+                        options='windowOptions'
+                        >
+
+                    <div class="card">
+                        <div ng-class="'item item-'+getStatusColor(position.status)">
+                            {{position.comment}}
+                        </div>
+                        <div class="item item-image">
+                            <img ng-src='{{position.image}}' style="width: 150px"/>
+                        </div>
+                    </div>
+
+                </ui-gmap-window>
+            </ui-gmap-marker>
+
+            <!-- my position marker -->
+            <ui-gmap-marker idKey='001'
+                            coords='myPosition'
+                            options="markerOption"
+                    >
+            </ui-gmap-marker>
+
+
+        </ui-gmap-google-map>
+
+        <!-- control -->
+        <script type="text/ng-template" id="searchbox.tpl.html">
+            <label>Test</label>
+            <input type="text" ng-model="destination" placeholder="Destination" style="display:block;width: 100%;margin-top:5px;padding: 15px">
+        </script>
+
+    </ion-content>
+</ion-view>

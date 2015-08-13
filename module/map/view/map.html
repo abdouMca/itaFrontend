@@ -10,39 +10,79 @@
 
     <ion-content class="has-header">
 
+        <div class="list">
 
-        <ui-gmap-google-map
-                center='map.center'
-                zoom='map.zoom'
-                draggable='true'
-                bounds='bounds'>
+            <div class="item item-divider">
+                {{autocomplete}}
+            </div>
 
-            <ui-gmap-marker ng-repeat="position in pos"
-                            icon='position.icon'
-                            idKey='position.id'
-                            coords='position'
-                            click='onClick(position)'
-                            >
-                <ui-gmap-window
-                        isIconVisibleOnClick='true'
-                        closeClick='onClick(position)'
-                        options='windowOptions'
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text"
+                           ng-model='autocompleteresult'
+                           options='autocompleteoptions'
+                           ng-autocomplete
+                            />
+                </label>
+                <button class="button button-small"
+                        ng-click="getRoute()"
                         >
+                    Go
+                </button>
 
-                    <div class="card">
-                        <div ng-class="'item item-'+getStatusColor(position.status)">
-                            {{position.comment}}
-                        </div>
-                        <div class="item item-image">
-                            <img ng-src='{{position.image}}' style="width: 150px" />
-                        </div>
-                    </div>
+            </div>
+        </div>
 
-                </ui-gmap-window>
-            </ui-gmap-marker>
 
-        </ui-gmap-google-map>
 
+        <div class="card">
+            <div class="item item-image" style="height: 400px;">
+
+                <ui-gmap-google-map
+                        center='map.center'
+                        zoom='map.zoom'
+                        draggable='true'
+                        bounds='bounds'
+                        options='mapOptions'>
+
+                    <!-- terrafic marker -->
+                    <ui-gmap-marker ng-repeat="position in pos"
+                                    icon='position.icon'
+                                    idKey='position.id'
+                                    coords='position'
+                                    click='onClick(position)'
+                                    options="markerOption"
+                            >
+                        <ui-gmap-window
+                                isIconVisibleOnClick='true'
+                                closeClick='onClick(position)'
+                                options='windowOptions'
+                                >
+
+                            <div class="card">
+                                <div ng-class="'item item-'+getStatusColor(position.status)">
+                                    {{position.comment}}
+                                </div>
+                                <div class="item item-image">
+                                    <img ng-src='{{position.image}}' style="width: 150px"/>
+                                </div>
+                            </div>
+
+                        </ui-gmap-window>
+                    </ui-gmap-marker>
+
+                    <!-- my position marker -->
+                    <ui-gmap-marker idKey='001'
+                                    coords='myPosition'
+                                    options="markerOption"
+                            >
+                    </ui-gmap-marker>
+
+
+                </ui-gmap-google-map>
+
+            </div>
+        </div>
 
     </ion-content>
 </ion-view>
