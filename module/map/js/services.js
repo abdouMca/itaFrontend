@@ -98,33 +98,36 @@ angular.module('map.services', [])
                 'assertive'
             ];
 
-            function calcRoute(map, start, end) {
+            function calcRoute(start, end, directionsDisplay, directionsService) {
 
-
-                var directionsService = new google.maps.DirectionsService();
-                var directionsDisplay = new google.maps.DirectionsRenderer();
+                /*
+                var directionsService = new google.maps.DirectionsService;
+                var directionsDisplay = new google.maps.DirectionsRenderer;
                 directionsDisplay.setMap(map);
+                */
 
 
-                var origin = new google.maps.LatLng({
-                    lat:start.latitude,
-                    lng:start.longitude
-                });
+                console.log(start);
+                console.log(end);
+
+                var origin = new google.maps.LatLng(start.latitude, start.longitude);
+                var finish = new google.maps.LatLng(end.k, end.D);
+
+                console.log(origin);
+                console.log(finish);
 
                 var request = {
                     origin: origin,
-                    destination: end,
+                    destination: finish,
                     travelMode: google.maps.TravelMode.DRIVING,
                     provideRouteAlternatives: true
                 };
+
                 directionsService.route(request, function (response, status) {
                     if (status == google.maps.DirectionsStatus.OK) {
                         directionsDisplay.setDirections(response);
                     }
                 });
-
-
-                console.info(origin);
 
             }
 
@@ -147,8 +150,6 @@ angular.module('map.services', [])
             getCurrentPostion: function () {
                 return $cordovaGeolocation.getCurrentPosition(Options)
                     .then(function (position) {
-                        console.log('log position here');
-                        console.log(position.latitude);
                         return position;
                     }, function (err) {
                         console.log(err);

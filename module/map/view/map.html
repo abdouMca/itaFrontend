@@ -10,34 +10,24 @@
 
     <ion-content class="has-header">
 
+        <!-- search -->
         <div class="list">
-
-            <div class="item item-divider">
-                {{autocomplete}}
-            </div>
-
             <div class="item item-input-inset">
                 <label class="item-input-wrapper">
-                    <input type="text"
+                    <input id="ac" type="text"
                            ng-model='autocompleteresult'
+                           ng-autocomplete='autocompleteresult'
+                           details='autocompletedetail'
                            options='autocompleteoptions'
-                           ng-autocomplete
-                            />
+                           />
                 </label>
-                <button class="button button-small"
-                        ng-click="getRoute()"
-                        >
-                    Go
-                </button>
-
+                <button class="button button-small" ng-click="getRoute(autocompletedetail)">Go</button>
             </div>
         </div>
 
-
-
+        <!-- map -->
         <div class="card">
             <div class="item item-image" style="height: 400px;">
-
                 <ui-gmap-google-map
                         center='map.center'
                         zoom='map.zoom'
@@ -51,13 +41,11 @@
                                     idKey='position.id'
                                     coords='position'
                                     click='onClick(position)'
-                                    options="markerOption"
-                            >
+                                    options="markerOption">
                         <ui-gmap-window
                                 isIconVisibleOnClick='true'
                                 closeClick='onClick(position)'
-                                options='windowOptions'
-                                >
+                                options='windowOptions'>
 
                             <div class="card">
                                 <div ng-class="'item item-'+getStatusColor(position.status)">
@@ -74,10 +62,8 @@
                     <!-- my position marker -->
                     <ui-gmap-marker idKey='001'
                                     coords='myPosition'
-                                    options="markerOption"
-                            >
+                                    options="markerOption">
                     </ui-gmap-marker>
-
 
                 </ui-gmap-google-map>
 

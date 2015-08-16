@@ -10,20 +10,6 @@ angular.module('map.controllers', [])
     .controller('MapSituationController', ['$scope', '$timeout', 'positionService', 'uiGmapIsReady', 'geoLocationService',
         function ($scope, $timeout, positionService, uiGmapIsReady, geoLocationService) {
 
-
-            /* AUTOCOMPLETE */
-            $scope.autocompleteoptions = {
-                country: 'dz',
-                types: '(cities)'
-            };
-            $scope.autocompletedetail = '';
-            $scope.autocompleteresult = '';
-            $scope.getRoute = function () {
-                console.log($scope.autocompletedetail);
-                //positionService.getDirection($scope.mapObject, $scope.myPosition, $scope.autoCompleteResult);
-            };
-
-
             $scope.pos = [];
             $scope.bounds = positionService.bounds;
             positionService.getAll()
@@ -63,7 +49,6 @@ angular.module('map.controllers', [])
             geoLocationService
                 .getCurrentPostion()
                 .then(function (position) {
-                    console.log(JSON.stringify(position));
                     $scope.myPosition.latitude = position.coords.latitude;
                     $scope.myPosition.longitude = position.coords.longitude;
                 }, function (err) {
@@ -78,22 +63,38 @@ angular.module('map.controllers', [])
                 zoom: 14
             };
             $scope.mapOptions = {
-                disableDefaultUI: true,
+                disableDefaultUI: false,
                 streetViewControl: false,
                 scaleControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-
             //fit mp bounds and get route
             $scope.mapObject = {};
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
             uiGmapIsReady.promise(1).then(function (instances) {
                 instances.forEach(function (inst) {
                     var map = inst.map;
                     map.fitBounds($scope.bounds);
                     //$scope.mapObject = inst.map;
+                    directionsDisplay.setMap(map);
                 });
             });
+
+            /* AUTOCOMPLETE */
+            $scope.autocompleteoptions = {
+                country: 'dz',
+                types: '(cities)'
+            };
+            $scope.autocompletedetail = '';
+            $scope.autocompleteresult = '';
+            $scope.getRoute = function (result) {
+
+                var location = result.geometry.location;
+                console.log(location.k+', '+location.D);
+                positionService.getDirection($scope.myPosition, location, directionsDisplay, directionsService);
+            };
         }])
 
     .controller('MapSuccessController', ['$state', '$timeout',
@@ -125,7 +126,7 @@ angular.module('map.controllers', [])
                 });
 
             //$scope.$watchCollection('position', function(){
-             //   $scope.map.center = $scope.position;
+            //   $scope.map.center = $scope.position;
             //});
 
             //Pictures
