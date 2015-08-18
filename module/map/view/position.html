@@ -71,6 +71,15 @@
                 </label>
             </div>
 
+            <div class="card" ng-show="position.status == 2" >
+                <div class="item item-checkbox">
+                    <label class="checkbox">
+                        <input ng-model="position.isAccident" type="checkbox">
+                    </label>
+                    Accident ?
+                </div>
+            </div>
+
             <div class="card">
                 <div class="item item-divider item-calm">Ajouter un commentaire</div>
                 <label class="item item-input">
@@ -91,13 +100,13 @@
             </div>
 
             <div class="card">
-            <div class="item">
-            <button class=" button button-block button-positive button-outline">
-                Envoyer
-                <i class="icon ion-android-done"></i>
-            </button>
-            </div>
-            <div class="item item-divider"></div>
+                <div class="item">
+                    <button class=" button button-block button-positive button-outline">
+                        Envoyer
+                        <i class="icon ion-android-done"></i>
+                    </button>
+                </div>
+                <div class="item item-divider"></div>
             </div>
 
         </form>

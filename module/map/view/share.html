@@ -1,0 +1,46 @@
+<ion-view ng-controller="ShareController">
+
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-buttons>
+            <button class="button icon ion-home" ui-sref="home.map"></button>
+        </ion-nav-buttons>
+        <ion-nav-title>Map</ion-nav-title>
+
+    </ion-nav-bar>
+
+    <ion-content class="has-header">
+
+        <div class="card">
+            <div class="item ">
+
+                <div class="row">
+                    <div class="col">
+                        Partager ma position sur facebook
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="button button-block button-positive" ng-click="sharePosition()">
+                            <i class="icon ion-social-facebook"></i>
+                            Partager Facebook
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="button button-block icon" ui-sref="home.map">
+                            <i class="icon ion-ios-home-outline"></i>
+                            Retour
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+
+</ion-view>

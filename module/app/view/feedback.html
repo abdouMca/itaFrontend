@@ -6,10 +6,9 @@
                 <h2>Votre avis</h2>
             </div>
             <div class="item">
-                <p>Veuillez nous donnez votre avis pour amelioré l applciation</p>
-
+                <p>Veuillez nous donnez votre avis </p>
+                <p>pour amelioré l applciation</p>
                 <p>Ou par email a l'adress suivant</p>
-
                 <p><strong>khaled.hadj.a@gmail.com</strong></p>
             </div>
         </div>
@@ -17,8 +16,6 @@
 
         <form name='contactForm' ng-submit='sendMessage(message)' novalidate>
             <div class="list">
-
-
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">Votre Nom</span>
                     <input ng-model="message.fromName"
@@ -27,7 +24,6 @@
                            type="text"
                            placeholder="Khaled" >
                 </label>
-
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">Email</span>
                     <input ng-model="message.fromEmail"
@@ -51,7 +47,7 @@
                 </label>
 
                 <div class="item">
-                    <button ng-disabled='contactForm.$valid' class="button button-positive button-outline">Envoyer</button>
+                    <button ng-disabled='!contactForm.$valid' class="button button-positive button-outline">Envoyer</button>
                 </div>
                 <div class="item item-divider"></div>
             </div>

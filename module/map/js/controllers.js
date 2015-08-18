@@ -23,6 +23,7 @@ angular.module('map.controllers', [])
                     }
                 });
 
+
             $scope.markerOption = {
                 animation: google.maps.Animation.DROP,
                 draggable: false
@@ -92,7 +93,7 @@ angular.module('map.controllers', [])
             $scope.getRoute = function (result) {
 
                 var location = result.geometry.location;
-                console.log(location.k+', '+location.D);
+                console.log(location.k + ', ' + location.D);
                 positionService.getDirection($scope.myPosition, location, directionsDisplay, directionsService);
             };
         }])
@@ -139,11 +140,36 @@ angular.module('map.controllers', [])
             };
 
             //send current position to server via  position service
+            $scope.data = '';
             $scope.newPosition = function (position) {
-                //position.image = $scope.picture;
-                //positionService.newPosition(position);
-                positionService.sendDataWithImage($scope.picture, position)
-                $state.go('success');
+                $scope.data = position;
+                console.log(position);
+                // positionService.sendDataWithImage($scope.picture, position);
+                position.currentPosition = position;
+                $state.go('share', $scope.data);
             };
+        }])
+
+
+    .controller('ShareController', ['$scope', '$cordovaSocialSharing', '$stateParams',
+        function ($scope, $cordovaSocialSharing, $stateParams) {
+
+            var lat = $stateParams.latitude;
+
+            var nbr = 5;
+
+            console.log(lat);
+            /*
+             $scope.sharePosition = function(){
+             $cordovaSocialSharing
+             .share('test', 'subject test', null, 'http://www.google.com') // Share via native share sheet
+             .then(function(result) {
+             // Success!
+             }, function(err) {
+             // An error occured. Show a message to the user
+             });
+             }
+             */
+
         }])
 ;

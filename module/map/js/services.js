@@ -1,5 +1,5 @@
 /**
- * Created by khaled on 7/28/15.
+ * Created by jkhaled on 7/28/15.
  */
 'use strict';
 
@@ -100,21 +100,8 @@ angular.module('map.services', [])
 
             function calcRoute(start, end, directionsDisplay, directionsService) {
 
-                /*
-                var directionsService = new google.maps.DirectionsService;
-                var directionsDisplay = new google.maps.DirectionsRenderer;
-                directionsDisplay.setMap(map);
-                */
-
-
-                console.log(start);
-                console.log(end);
-
                 var origin = new google.maps.LatLng(start.latitude, start.longitude);
                 var finish = new google.maps.LatLng(end.k, end.D);
-
-                console.log(origin);
-                console.log(finish);
 
                 var request = {
                     origin: origin,
@@ -128,11 +115,11 @@ angular.module('map.services', [])
                         directionsDisplay.setDirections(response);
                     }
                 });
-
             }
-
             positions.getDirection = calcRoute;
 
+
+            positions.currentPosition = {};
 
             return positions;
 

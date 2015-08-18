@@ -29,8 +29,9 @@ angular.module('app.services', [])
                     return $http({
                         method: "post",
                         url: endPointService.contact,
-                        data: endPointService.ObjectToParams(message),
-                        headers: {'Content-Type': 'multipart/form-data'}
+                        //data: endPointService.ObjectToParams(message),
+                        data: message,
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                     }).success(function (response) {
                         console.log(response);
                         console.log('data sent');

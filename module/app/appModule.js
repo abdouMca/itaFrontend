@@ -16,7 +16,7 @@ angular.module('app', ['app.services', 'app.controllers'])
 
             .state('home.map', {
                 url: '',
-                controller:'MapSituationController',
+                controller: 'MapSituationController',
                 views: {
                     'tab-map': {
                         templateUrl: 'module/map/view/map.html'
@@ -35,7 +35,7 @@ angular.module('app', ['app.services', 'app.controllers'])
 
             .state('home.feedback', {
                 url: '/feedback',
-                controller:'ContactController',
+                controller: 'ContactController',
                 views: {
                     'tab-feedback': {
                         templateUrl: 'module/app/view/feedback.html'
