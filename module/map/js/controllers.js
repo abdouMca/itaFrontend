@@ -91,7 +91,6 @@ angular.module('map.controllers', [])
             $scope.autocompletedetail = '';
             $scope.autocompleteresult = '';
             $scope.getRoute = function (result) {
-
                 var location = result.geometry.location;
                 console.log(location.k + ', ' + location.D);
                 positionService.getDirection($scope.myPosition, location, directionsDisplay, directionsService);
@@ -105,8 +104,8 @@ angular.module('map.controllers', [])
             }, 3000);
         }])
 
-    .controller('MapLocateController', ['$scope', '$state', 'positionService', 'photoService', 'geoLocationService',
-        function ($scope, $state, positionService, photoService, geoLocationService) {
+    .controller('MapLocateController', ['$scope', '$state', 'positionService', 'photoService', 'geoLocationService', 'containerService',
+        function ($scope, $state, positionService, photoService, geoLocationService, containerService) {
 
             // geoLocation
             $scope.map = {
@@ -116,7 +115,6 @@ angular.module('map.controllers', [])
 
             //get current position and bind it to $scope.postion
             $scope.position = {};
-            var lockCoordinate = false;
             geoLocationService
                 .getCurrentPostion()
                 .then(function (position) {
@@ -125,10 +123,6 @@ angular.module('map.controllers', [])
                 }, function (err) {
                     console.log(err);
                 });
-
-            //$scope.$watchCollection('position', function(){
-            //   $scope.map.center = $scope.position;
-            //});
 
             //Pictures
             $scope.picture = '';
@@ -143,33 +137,38 @@ angular.module('map.controllers', [])
             $scope.data = '';
             $scope.newPosition = function (position) {
                 $scope.data = position;
-                console.log(position);
                 // positionService.sendDataWithImage($scope.picture, position);
-                position.currentPosition = position;
-                $state.go('share', $scope.data);
+                containerService.currentPosition = position;
+                //$state.go('share', $scope.data);
+                console.log(containerService.currentPosition);
+                $state.go('share');
             };
         }])
 
 
-    .controller('ShareController', ['$scope', '$cordovaSocialSharing', '$stateParams',
-        function ($scope, $cordovaSocialSharing, $stateParams) {
+    .controller('ShareController', ['$scope', '$cordovaSocialSharing', '$stateParams', 'containerService',
+        function ($scope, $cordovaSocialSharing, $stateParams, containerService) {
 
-            var lat = $stateParams.latitude;
+            console.log('ShareController');
+            console.log(containerService.currentPosition);
 
-            var nbr = 5;
+            var currentPosition = containerService.currentPosition;
+            var coordinates = currentPosition.latitude + ',' + currentPosition.longitude;
 
-            console.log(lat);
-            /*
-             $scope.sharePosition = function(){
-             $cordovaSocialSharing
-             .share('test', 'subject test', null, 'http://www.google.com') // Share via native share sheet
-             .then(function(result) {
-             // Success!
-             }, function(err) {
-             // An error occured. Show a message to the user
-             });
-             }
-             */
+            var link = window.encodeURIComponent('https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:blue|label:S|' + coordinates);
+            var message = currentPosition.content;
+            var subject = currentPosition.status;
+
+            $scope.sharePosition = function () {
+                $cordovaSocialSharing
+                    .share(message, 'subject test', null, link) // Share via native share sheet
+                    .then(function (result) {
+                        // Success!
+                    }, function (err) {
+                        // An error occured. Show a message to the user
+                    });
+            };
+
 
         }])
 ;

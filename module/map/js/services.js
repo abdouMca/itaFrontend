@@ -116,10 +116,8 @@ angular.module('map.services', [])
                     }
                 });
             }
+
             positions.getDirection = calcRoute;
-
-
-            positions.currentPosition = {};
 
             return positions;
 
@@ -146,4 +144,7 @@ angular.module('map.services', [])
         };
 
     }])
+    .factory('containerService', function () {
+        return {};
+    })
 ;
