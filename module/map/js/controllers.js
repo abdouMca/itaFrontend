@@ -135,17 +135,17 @@ angular.module('map.controllers', [])
 
             //send current position to server via  position service
             $scope.data = '';
+            $scope.position.status = 0;
             $scope.newPosition = function (position) {
                 $scope.data = position;
-                // positionService.sendDataWithImage($scope.picture, position);
+                positionService.sendDataWithImage($scope.picture, position);
                 containerService.currentPosition = position;
                 //$state.go('share', $scope.data);
                 console.log(containerService.currentPosition);
                 $state.go('share');
             };
         }])
-
-
+    
     .controller('ShareController', ['$scope', '$cordovaSocialSharing', '$stateParams', 'containerService',
         function ($scope, $cordovaSocialSharing, $stateParams, containerService) {
 
@@ -155,10 +155,17 @@ angular.module('map.controllers', [])
             var currentPosition = containerService.currentPosition;
             var coordinates = currentPosition.latitude + ',' + currentPosition.longitude;
 
-            var link = window.encodeURIComponent('https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:blue|label:S|' + coordinates);
+            var color = ['green','yellow', 'red'];
+            var status = ['V','C', 'B'];
+
+            var currentColor = color[currentPosition.status];
+            var currentStatus = status[currentPosition.status];
+
+            //var link = window.encodeURIComponent('https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:blue|label:S|' + coordinates);
+            var link = 'https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:'+currentColor+'|label:'+currentStatus+'|' + coordinates;
+            console.info(link);
             var message = currentPosition.content;
             var subject = currentPosition.status;
-
             $scope.sharePosition = function () {
                 $cordovaSocialSharing
                     .share(message, 'subject test', null, link) // Share via native share sheet

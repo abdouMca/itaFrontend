@@ -13,6 +13,7 @@ angular.module('app.controllers', [])
                 var message = angular.copy(msg);
                 contactService.sendMessage(message)
                     .then(function (data) {
+                        console.log("contact controller success");
                         console.log(data);
                         $state.go('success');
                     }, function (err) {
