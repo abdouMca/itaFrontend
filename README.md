@@ -2,8 +2,8 @@
 
 ###Description :
 
-It' simple mobile app based on IONIC (apache-corodova) & AngularJS (ng-cordova) developed for "ITA information Trafic Algerie"
-facebook group to help people share positions and situation with realtime status
+It's a simple mobile app based on IONIC (apache-corodova) & AngularJS (ng-cordova) developed for "ITA information Trafic Algerie"
+facebook group to help people share their positions and traffic status with photo and short message,
 
 ###How to use
 
