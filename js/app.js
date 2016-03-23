@@ -8,7 +8,7 @@ angular.module('main', ['ionic', 'uiGmapgoogle-maps', 'ngAutocomplete', 'ngCordo
     .config(['$urlRouterProvider', 'uiGmapGoogleMapApiProvider',function($urlRouterProvider, uiGmapGoogleMapApiProvider){
         $urlRouterProvider.otherwise('/');
         uiGmapGoogleMapApiProvider.configure({
-            key: 'AIzaSyCavNvapehlPoN1VeNI4ti2ZPGHF0aqkrU'
+            key: 'Your key here'
            // v: '3.17',
            // libraries: 'places',
            // language:'fr'// 'weather,geometry,visualization'
