@@ -26,7 +26,7 @@ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plug
 
 ```
 
-change the file *js/app.js* and add your google map key
+change the file ```js/app.js``` and add your google map key
 
 ```javascript
 .config(['$urlRouterProvider', 'uiGmapGoogleMapApiProvider',function($urlRouterProvider, uiGmapGoogleMapApiProvider){
